@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(37575427_8549530.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: white;
+}
+
+.calculadoraImc {
+    background-color: rgba(38, 2, 170, 0.849);
+    padding: 1.25rem;
+    width: 37.5rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 15px black;
+}
+
+.nome,
+.peso,
+.altura,
+#saidaJs {
+    width: 80%;
+}
+
+#nome,
+#peso,
+#altura {
+    width: 100%;
+}
+
+.nome,
+.peso,
+.altura {
+    font-size: 1.3rem;
+    color: rgb(234, 234, 234);
+    font-weight: bold;
+}
+
+.nome input,
+.peso input,
+.altura input {
+    padding: .7rem;
+    font-size: 1.6rem;
+}
+
+#btn {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    width: 20rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+* #saidaJs {
+    text-shadow: 0 0 15px black;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+}
