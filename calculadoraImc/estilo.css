@@ -25,21 +25,21 @@ h1 {
     background-color: rgba(38, 2, 170, 0.849);
     padding: 1.25rem;
     width: 37.5rem;
-    height: 40rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.3rem;
     border-radius: .5rem;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px 2px rgba(38, 2, 170, 0.849);
 }
 
 .nome,
 .peso,
 .altura,
 #saidaJs {
-    width: 80%;
+    width: 60%;
 }
 
 #nome,
@@ -54,6 +54,10 @@ h1 {
     font-size: 1.3rem;
     color: rgb(234, 234, 234);
     font-weight: bold;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
 }
 
 .nome input,
@@ -61,24 +65,37 @@ h1 {
 .altura input {
     padding: .7rem;
     font-size: 1.6rem;
+    flex-basis: 90%;
 }
 
+.nome label,
+.peso label,
+.altura label{
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex-basis: 20%;
+}
+
+
 #btn {
-    margin-top: 40px;
+    margin-top: 1.3rem;
     font-size: 1.6rem;
-    width: 20rem;
+    font-weight: bold;
     padding: .5rem;
     border-radius: .5rem;
     border: none;
     cursor: pointer;
+    width: 60%;
 }
 
 * #saidaJs {
     text-shadow: 0 0 15px black;
+    border-radius: 3px;
     text-align: center;
     color: white;
     font-size: 2rem;
     width: 100%;
     height: 10rem;
-    padding: 2rem;
+    padding: 1rem;
+    border: 3px solid rgb(255, 255, 255);
 }

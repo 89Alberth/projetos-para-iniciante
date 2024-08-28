@@ -32,22 +32,27 @@
         if (nome.value == "") {
             alert("O nome deve ser preenchido")
             nome.focus()
+
         } else if (peso.value == "") {
             alert("O peso deve ser preenchido")
             peso.focus()
+
         } else if (altura.value == "") {
             alert("A altura deve ser preenchido")
             altura.focus()
+
+        } else {
+            let _peso = parseFloat(peso.value)
+            let _altura = parseFloat(altura.value)
+            let _calcularImc = calcularImc(_peso, _altura).toFixed(2)
+            let _classificaImc = classificaImc(_calcularImc)
+
+            classificaImc(calcularImc)
+            resultado.textContent = `Olá ${nome.value}, Seu IMC é ${_calcularImc}, ${_classificaImc} `
         }
 
-        let _peso = parseFloat(peso.value)
-        let _altura = parseFloat(altura.value)
-        let _calcularImc = calcularImc(_peso, _altura).toFixed(2)
-        let _classificaImc = classificaImc(_calcularImc)
-        
-        classificaImc(calcularImc)
-        resultado.textContent = `Olá ${nome.value}, Seu IMC é ${_calcularImc}, ${_classificaImc} `
-        
+
+
     }
 
     btn.addEventListener("click", init)
